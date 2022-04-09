@@ -1,0 +1,30 @@
+.social-footer {
+  bottom: 0;
+  padding: 1rem;
+  background: #3c3c3c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #1262c5;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+/*# sourceMappingURL=footer.css.map */

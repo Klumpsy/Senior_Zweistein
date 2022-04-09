@@ -1,0 +1,12 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+
+	<div>
+		<p>Je blog met de titel:
+			{{ post.getTitle }}
+			is opgeslagen!</p>
+		<a href="/blogs">Terug naar Blogs</a>
+	</div>
+
+{% endblock %}

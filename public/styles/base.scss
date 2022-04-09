@@ -1,0 +1,23 @@
+* { 
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+html { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-content-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    main { 
+        max-width: 1700px;
+       
+    }
+}
+
+

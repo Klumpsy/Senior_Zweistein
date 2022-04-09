@@ -1,0 +1,15 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+
+	<div class="hero-section">
+		<div class="hero-section-text">
+			<h2>{{blog.title}}</h2>
+			<h5>Auteur:
+				{{blog.author}}</h5>
+		</div>
+	</div>
+	<div>
+		<p>{{blog.blogData}}</p>
+	</div>
+</div>{% endblock %}

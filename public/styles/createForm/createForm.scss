@@ -1,0 +1,15 @@
+#add_blog_form_Submit { 
+    width: 100%; 
+    background-color: rgb(151, 151, 226);
+    padding: 10px;
+    margin-bottom: 20px;
+    &:hover { 
+        background-color: rgb(77, 77, 81); 
+        color: white; 
+        cursor: pointer;
+    }
+}
+
+#add_blog_form_blogData { 
+    height: 200px;
+}

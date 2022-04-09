@@ -1,0 +1,103 @@
+$white: #fff;
+$black: #000;
+$highlight: #5b85d4;
+$shadow: #888888;
+
+.card-article-hover {
+  box-shadow: 0px 0px 7px $shadow;
+  position: relative; 
+  .badge { 
+    position: absolute;
+    right: 10px;
+    top: 10px; 
+  }
+  
+  .card-section {
+    width: 90%;
+    background: $white;
+    margin: 0 auto;
+    padding-top: 25px;
+    margin-top: -3rem;
+    z-index: 2;
+   
+
+    .article-subtext {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .article-title {
+      font-weight: bold;
+      font-family: ‘Georgia’, serif;
+      font-size: 1.5rem;
+      color: $black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .article-desc {
+      font-family: ‘Georgia, serif;
+      font-size: 1rem;
+    }
+  }
+
+  .card-divider {
+    background: $white;
+
+    .author {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $highlight;
+    }
+  }
+
+  .hover-border {
+    height: 10px;
+    width: 450px;
+    background: $highlight;
+    width: 0;
+    transition: width 1s ease;
+  }
+
+  &:hover .hover-border {
+    height: 10px;
+    width: 450px;
+    transition: width 1s ease;
+  }
+
+  .author {
+    color: navy;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    margin: 0 1rem;
+    max-width: 50px;
+  }
+
+  .meta-data {
+    text-transform: uppercase;
+  }
+
+  .blog-delete-button { 
+    background-color: rgb(232, 124, 124);
+    color: white;
+    padding: 10px;
+    margin-left: 20px; 
+    &:hover { 
+      background-color: rgb(195, 76, 76); 
+      color: black;
+    }
+  }
+
+  &:hover { 
+    .badge { 
+      background-color: #5b85d4;
+      transform: scale(1.3); 
+      transition: .3s ease-in; 
+    }
+  }
+}
+
+

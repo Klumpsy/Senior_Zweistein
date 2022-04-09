@@ -1,0 +1,33 @@
+nav { 
+    background-color: rgb(56, 55, 55);
+    img { 
+        width: 100px;
+    }
+    ul { 
+        li {
+            a { 
+                i { 
+                    color: rgb(74, 71, 71); 
+                    margin-right: 10px;
+                }
+            } 
+            &:hover { 
+                background: lighten(#333, 10%); 
+                a { 
+                    color: white;
+                }
+                i { 
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.title-bar { 
+    min-height: 100px;
+    justify-content: space-between;
+    .mobile-menu-logo { 
+        max-width: 70px;
+    }
+}

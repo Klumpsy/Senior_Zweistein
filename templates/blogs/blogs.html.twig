@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h2>Blogs({{blogs | length}})</h2>
+	<div class="blog-container">
+		{% for blog in blogs | reverse %}
+			<div class="card-article-hover card">
+				<span class="badge warning">{{loop.index}}</span>
+				<a href="/blogs/{{blog.Id}}">
+					<img src="https://unsplash.it/600/400">
+				</a>
+				<div class="card-section">
+					<p class="meta-data article-subtext"></p>
+					<a href="">
+						<h3 class="article-title">{{blog.title}}</h3>
+					</a>
+					<p class="article-desc">{{blog.blogData}}</p>
+				</div>
+				<div class="card-divider flex-container align-middle">
+					<img class="avatar" src="https://iconarchive.com/download/i48697/custom-icon-design/pretty-office-2/man.ico" alt="avatar">
+					<a href="/blogs/{{blog.Id}}" class="author">{{blog.author}}</a>
+					<a class="blog-delete-button" href="/blogs/delete/{{blog.Id}}">Delete</a>
+				</div>
+				<div class="hover-border"></div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

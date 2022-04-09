@@ -1,0 +1,36 @@
+nav {
+  background-color: #383737;
+}
+
+nav img {
+  width: 100px;
+}
+
+nav ul li a i {
+  color: #4a4747;
+  margin-right: 10px;
+}
+
+nav ul li:hover {
+  background: #4d4d4d;
+}
+
+nav ul li:hover a {
+  color: white;
+}
+
+nav ul li:hover i {
+  color: white;
+}
+
+.title-bar {
+  min-height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title-bar .mobile-menu-logo {
+  max-width: 70px;
+}
+/*# sourceMappingURL=navigation.css.map */
